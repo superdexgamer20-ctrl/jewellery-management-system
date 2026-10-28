@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Jewellery Management System - Login</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+}
+
+body{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+   background:url("https://i.pinimg.com/1200x/87/2d/55/872d5526be14a83992cafa62e6c721bc.jpg") center/cover;
+background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.login-box{
+width:350px;
+background:white;
+padding:30px;
+border-radius:15px;
+box-shadow:0 0 15px rgba(0,0,0,.4);
+text-align:center;
+}
+
+h2{
+color:goldenrod;
+margin-bottom:20px;
+}
+
+input{
+width:100%;
+padding:12px;
+margin:10px 0;
+border:1px solid #ccc;
+border-radius:5px;
+}
+
+button{
+width:100%;
+padding:12px;
+background:gold;
+border:none;
+font-size:18px;
+cursor:pointer;
+font-weight:bold;
+}
+
+button:hover{
+background:#d4af37;
+}
+</style>
+</head>
+
+<body>
+
+<div class="login-box">
+
+<h2>Jewellery Management</h2>
+
+<input type="text" id="username" placeholder="Username">
+
+<input type="password" id="password" placeholder="Password">
+
+<button onclick="login()">Login</button>
+
+</div>
+
+<script>
+
+function login(){
+
+let user=document.getElementById("username").value;
+let pass=document.getElementById("password").value;
+
+if(user==="tanmay" && pass==="11223344"){
+
+window.location="dashboard.html";
+
+}
+else{
+
+alert("Invalid Username or Password");
+
+}
+
+}
+
+</script>
+
+</body>
+</html>
